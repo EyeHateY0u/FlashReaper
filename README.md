@@ -64,5 +64,5 @@ arduino-cli core install arduino:avr
 # Author
 **EyeHateY0u a.k.a D0pef1end**
 - Github: @eyehatey0u
-- Project Link: https://github.com/EyeHateY0u/FlashReaper+
+- Project Link: https://github.com/EyeHateY0u/FlashReaper
 ## If you find this project useful, please give it a star!
