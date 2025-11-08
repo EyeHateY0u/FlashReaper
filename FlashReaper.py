@@ -43,13 +43,14 @@ def listFirmware():
 	with os.scandir("firmware") as it:
 		for entry in it:
 			if entry.is_dir():
+
 				file = open(f"firmware\\{entry.name}_Description.txt", 'r')
 				description = file.read()
 				file.close()
 
 				firmwareList[entry.name] = description
 
-				return firmwareList
+	return firmwareList
 
 def listPlugins():
 	pluginList = {}
@@ -167,7 +168,7 @@ def main():
 
 
 	except Exception as e:
-		console.print(f"[bold red]An critical error occured:[/] {e}")
+		console.print(f"[bold red]An critical error occured: {e}")
 		console.input("[bold green]\nPress enter to continue...[/]")
 
 if __name__ == "__main__":

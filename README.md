@@ -29,10 +29,10 @@ pip install -r requirements.txt
 ```
 # Inititalize and configure Arduino CLI
 arduino-cli config init
-aurdino-cli core update-index
+arduino-cli core update-index
 
 # Install supported cores
-arudino-cli core install esp8266:esp8266
+arduino-cli core install esp8266:esp8266
 arduino-cli core install arduino:avr
 ```
 ### Usage 
