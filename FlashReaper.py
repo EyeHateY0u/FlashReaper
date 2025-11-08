@@ -8,6 +8,17 @@ import time
 import os
 
 console = Console()
+logo = '''
+                                                                                                              
+ ▄▄▄▄▄▄▄▄  ▄▄▄▄                          ▄▄        ▄▄▄▄▄▄                                                     
+ ██▀▀▀▀▀▀  ▀▀██                          ██        ██▀▀▀▀██                                                   
+ ██          ██       ▄█████▄  ▄▄█████▄  ██▄████▄  ██    ██   ▄████▄    ▄█████▄  ██▄███▄    ▄████▄    ██▄████ 
+ ███████     ██       ▀ ▄▄▄██  ██▄▄▄▄ ▀  ██▀   ██  ███████   ██▄▄▄▄██   ▀ ▄▄▄██  ██▀  ▀██  ██▄▄▄▄██   ██▀     
+ ██          ██      ▄██▀▀▀██   ▀▀▀▀██▄  ██    ██  ██  ▀██▄  ██▀▀▀▀▀▀  ▄██▀▀▀██  ██    ██  ██▀▀▀▀▀▀   ██      
+ ██          ██▄▄▄   ██▄▄▄███  █▄▄▄▄▄██  ██    ██  ██    ██  ▀██▄▄▄▄█  ██▄▄▄███  ███▄▄██▀  ▀██▄▄▄▄█   ██      
+ ▀▀           ▀▀▀▀    ▀▀▀▀ ▀▀   ▀▀▀▀▀▀   ▀▀    ▀▀  ▀▀    ▀▀▀   ▀▀▀▀▀    ▀▀▀▀ ▀▀  ██ ▀▀▀      ▀▀▀▀▀    ▀▀      
+                                                                                 ██
+'''.strip()
 
 def firmwareUpload(board):
 	console.print("[bold green](@)[/] [blink cyan]Сompilation...[/]")
@@ -56,7 +67,7 @@ def listPlugins():
 
 def main():
 	try:
-		console.print(Panel.fit("Welcome to FlashReaper v.1.0"), style='bold green')
+		console.print(Panel.fit(logo, subtitle="Welcome to FlashReaper v.1.0", subtitle_align='left'), style='bold green')
 		console.print(
 		Panel.fit('''
 1. Print COM ports 
