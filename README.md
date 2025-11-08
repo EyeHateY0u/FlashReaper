@@ -3,6 +3,7 @@
  ## Features
  - **Interactive menu system**
  - **Custom firmware support**
+ - **Custom COM plugin support**
  - **COM ports detection**
  - **Serial port monitoring**
  - **One-click flashing**
@@ -58,8 +59,8 @@ arduino-cli core install arduino:avr
 -  Wait.
 - #### Work with Serial Port
 - Select 4 to start
--  Input COM port
-- Select mode (only standart avaliable at this moment)
+- Input COM port
+- Select mode (Standart or plugin)
 # Author
 **EyeHateY0u a.k.a D0pef1end**
 - Github: @eyehatey0u
